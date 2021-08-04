@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>ICT Department</title>
+	<link rel="stylesheet" href="dept.css">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+</head>
+<body style="background-color:lightblue;">
+<img src="sh.PNG" alt="ict logo" style="width:100%; height:100px">
+<div class="info">
+	<ul id="header">
+	<li><a href="dept.html">HOME</a></li>
+    <li>
+    	<div class="dropdown">
+    		<button class="dropbtn">ABOUT</button>
+    		<div class="profile">
+    			<a href="about.html">Our history</a>
+    			<a href="mission.html">Our Mission Statement</a>
+    			<a href="https://www.uniosun.edu.ng">Contact Us</a>
+    		</div>
+    	</div>
+    </li>
+	<li><a href="studentportal.html">STUDENT PORTAL</a></li>
+	<li><a href="ict_dept.html">ICT DEPARTMENT</a></li>
+	<li>
+		<div class="dropdown">
+			<button class="dropbtn">PROFILE</button>
+			<div class="profile">
+				<a href="lecturers.html">Academic Staff</a>
+				<a href="non-staff.html">Non Academic Staff</a>
+			</div>
+		</div>
+	</li>
+</ul>
+</li>
+</ul>
+</div>
+  <h2 style="text-align:center; color:black">INFORMATION COMMUNICATION AND TECHNOLOGY DEPARTMENT WEBSITE</h2> 
+  	<form>
+  		<input type="search" name="search">
+  		<input type="button" value="Search">
+  	</form><hr> 
+  	<div id="main">
+    <h2 style="color: green;">WELCOME</h2>
+    <div id="hod">
+    <img src="dr.jpg" style="height:200px;">
+</div> <h5>The I.C.T Head of department, Dr Lawrence O Omotosho welcomes you to Osun State University and its prestigious ICT department.</h5>
+    <p>I have the pleasure to welcome you to the website of Osun state University I.C.T department website, Nigeria. Our main campus is located in Osogbo, the capital of the State of Osun, where our ICT Department is situated. Licensed on 21 December, 2006, we opened our doors to full academic activities on 21 September 2007 and we have continued to make steady progress in the development of facilities and human resource to match the growing needs of the institution.<br><br>
+	At Osun State University, we are driven by our vision and desire to be a centre of excellence providing high quality teaching and learning experience, which will engender the production of entrepreneurial graduates capable of impacting on their environment while being globally competitive. As an institution, we have committed ourselves to creating a unique institution committed to the pursuit of academic innovation, skill-based training and a tradition of excellence in teaching, research and community service..</p>
+    <br>
+    <h2 style="color: green;">HEADLINES</h2>
+    <a href="#"><p class="news"> * The ICT department recently changed its Head Of Department to a most honourable man, who goes by the name Dr...<br><br>*CIT courses have now been replaced by CSC courses due to the new curriculum.<br><br>*NACOSS elections were just held to pick the new representatives of the department.</p></a>
+    <img src="ica.jpg" style="height:200px;">
+    <div id="time">
+    <marquee><p id="date"></p></marquee>
+</div>
+</div>
+<div id="side">
+    <h2 style="color: green;">ICT DEPARTMENT</h2><br>
+    <h3 style="color: green;"> <img src="arrow.png" style="height:15px"> OUR MISSION</h3>
+   <img src="mission.jpg" style="height:120px; width:150px;"><br>
+    <div class="slideshow-container">
+   	<div class="mySlides fade">
+   		<div class="numbertext">1 / 6</div>
+   		<img src="1.jpg" style="width:250px;">
+   		<div class="text">Our Mission</div>
+   	</div>
+
+   			<div class="mySlides fade">
+   		<div class="numbertext">2 / 6</div>
+   		<img src="2.png" style="width:250px;">
+   		<div class="text">Our Mission</div>
+   	</div>
+	<div class="mySlides fade">
+   		<div class="numbertext">3 / 6</div>
+   		<img src="5.jpg" style="width:250px;">
+   		<div class="text">Our Mission</div>
+   	</div>
+
+   			<div class="mySlides fade">
+   		<div class="numbertext">4 / 6</div>
+   		<img src="3.jpg" style="width:250px;">
+   		<div class="text">Our Mission</div>
+   	</div>
+
+   			<div class="mySlides fade">
+   		<div class="numbertext">5 / 6</div>
+   		<img src="4.jpg" style="width:250px;">
+   		<div class="text">Our Mission</div>
+   	</div>
+
+	<div class="mySlides fade">
+   		<div class="numbertext">6 / 6</div>
+   		<img src="6.jpg" style="width:250px;">
+   		<div class="text">Our Mission</div>
+   	</div>
+   </div>
+   	<br>
+   	<div style="text-align:center">
+   		<span class="dots active"></span>
+   		<span class="dots active"></span>
+   		<span class="dots active"></span>
+   		<span class="dots active"></span>
+   		<span class="dots active"></span>
+   		<span class="dots active"></span>
+   
+   </div>
+   
+     <p><strong>To facilitate world-leading research, teaching and learning and enhance the digital experience, through provision of sustainable and reliable IT solutions.</strong></p>
+	<h3 style="color: green;"><img src="arrow.png" style="height:15px">OUR VISION</h3>
+    <img src="vision.jpg" style="height:100px;"><br>
+    <p><strong>We will take a user-first approach to deliver service excellence, staying agile to drive digital innovation, whilst keeping core assets safe and resilient.</strong></p>
+  </div>
+
+ 
+  <script>
+  	var slideIndex = 0;
+  	showSlides();
+  	function showSlides() {
+  		var i;
+  		var slides=document.getElementsByClassName("mySlides");
+  		var dots=document.getElementsByClassName("dots");
+  		for (i=0; i<slides.length; i++) {
+  			slides[i].style.display="none";
+  		}
+  		slideIndex++;
+  		if (slideIndex>slides.length) {slideIndex=1}
+         for (i=0; i<dots.length; i++) {
+         	dots[i].className.replace(" active", "");
+         }
+         slides[slideIndex-1].style.display="block";
+         dots[slideIndex-1].className+="active";
+         setTimeout(showSlides, 2000);
+     }
+     </script>
+     <script>
+  
+     		document.getElementById("date").innerHTML=Date();
+     </script>
+  	
+
+</body>
+</html
